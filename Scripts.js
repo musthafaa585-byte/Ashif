@@ -1,4 +1,3 @@
-
 // small inline scripts (fallback if scripts.js is not used)
 document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -17,3 +16,4 @@ document.querySelectorAll('[data-demo-url]').forEach(btn => {
 
 // view work scroll
 document.getElementById('viewWork').addEventListener('click', () => document.getElementById('work').scrollIntoView({behavior:'smooth'}));
+
