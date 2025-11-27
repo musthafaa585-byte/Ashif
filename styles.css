@@ -439,11 +439,47 @@ footer {
 }
 
 
+/* Mobile (phones) — make profile photo clear & centered */
 @media (max-width: 576px) {
-  
+  /* Make the profile card compact and centered */
+  .profile-card {
+    padding: 14px;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Resize the container for the photo and make it square */
+  .profile-photo {
+    width: 110px;        /* square container */
+    height: 110px;
+    flex: 0 0 110px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 0 auto 10px; /* center & add space below */
+    position: relative;
+    top: 0;
+  }
+
+  /* Image should fill the square and show the face
+     adjust object-position Y value (40% is slightly lower — shows forehead + eyes) */
   .profile-photo img {
     width: 100%;
-    height: 130%;
+    height: 120%;
     object-fit: cover;
+    object-position: center 40%;
+    display: block;
+    border-radius: 8px;
+  }
+
+  /* Ensure profile-meta stacks nicely under the photo */
+  .profile-meta {
+    width: 100%;
+    margin-top: 4px;
+  }
+
+  /* Slightly reduce badge spacing for small screens */
+  .badge-collection {
+    justify-content: center;
+    gap: 6px;
   }
 }
