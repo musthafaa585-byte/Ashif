@@ -442,7 +442,7 @@ footer {
 @media (max-width: 576px) {
 .profile-photo img {
   width: 115px;
-  height: 1px;
+  height: 100px;
   object-fit: cover;
   object-position: center 30%; /* <<--- move face down: smaller = higher, larger = lower */
   display: block;
