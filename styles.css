@@ -444,8 +444,8 @@ footer {
     margin: 0 auto;
   }
   .profile-photo img {
-    width: 110px;
-    height: 50px;
-    
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
   }
 }
