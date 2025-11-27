@@ -440,11 +440,12 @@ footer {
 
 
 @media (max-width: 576px) {
-.profile-photo img {
-  width: 115px;
-  height: 100px;
-  object-fit: cover;
-  object-position: center 30%; /* <<--- move face down: smaller = higher, larger = lower */
-  display: block;
-}
+  .profile-photo {
+    margin: 0 auto;
+  }
+  .profile-photo img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+  }
 }
